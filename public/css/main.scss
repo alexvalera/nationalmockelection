@@ -1,13 +1,14 @@
 * {
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
   transition: all 0.3s ease;
 }
 
-@import 'variables'; 
-@import 'mixins'; 
+@import 'variables';
+@import 'mixins';
 @import 'typography';
 @import 'style-guide';
-@import  'lists'; 
-@import 'forms'; 
-@import 'polls'; 
+@import  'lists';
+@import 'forms';
+@import 'polls';
+@import 'testimonials';
