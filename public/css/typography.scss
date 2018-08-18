@@ -154,7 +154,7 @@ input[type=range]::-webkit-slider-thumb {
     margin-top: -15px;
     border-radius: 0 !important;
     transition: 0.3s ease;
-    box-shadow: -100vw 0 0 100vw dodgerblue;
+    
     &:focus, &:active {
       transform: scale(1.5);
     }

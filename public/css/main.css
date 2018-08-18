@@ -128,8 +128,7 @@ input[type=range]::-webkit-slider-thumb {
   cursor: pointer;
   margin-top: -15px;
   border-radius: 0 !important;
-  transition: 0.3s ease;
-  box-shadow: -100vw 0 0 100vw dodgerblue; }
+  transition: 0.3s ease; }
   input[type=range]::-webkit-slider-thumb:focus, input[type=range]::-webkit-slider-thumb:active {
     transform: scale(1.5); }
 
