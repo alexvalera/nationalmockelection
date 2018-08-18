@@ -1,0 +1,34 @@
+form {
+  max-width: 500px;
+  label {
+    display: block;
+    @extend .small;
+    margin-bottom: $sm-space;
+  }
+  input[type=text], textarea {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    padding: 10px;
+    width: 100%;
+    @extend .base;
+  } 
+  textarea {
+    height: 150px;
+    @include width-more-than($tablet-breakpoint) {
+      height: 250px;
+    }
+  }
+  select {
+    @extend .base;
+    padding: 10px;
+    background-color: white;
+    color: #707070;
+    -webkit-appearance: none;
+    width: 80%;
+  }
+}
+
+form.form--center {
+  margin: 0 auto;
+}

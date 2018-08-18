@@ -1,0 +1,25 @@
+ul, ol {
+  margin-bottom: $base-space;
+  counter-reset: list;
+  li {
+    position: relative;
+    padding-left: $base-space;
+    list-style-type: none;
+    @extend .base;
+    &:before {
+      content: '\2022';      /* The unicode for • character */
+      position: absolute;
+      left: 0;
+      top: 3px;
+      font-size: 40px;
+      color: #aaa;
+    }
+  }   
+}
+
+ol li:before {
+  top: 0px;
+  font-size: 17px;
+  counter-increment: list;          
+  content: counter(list); 
+}

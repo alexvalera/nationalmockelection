@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.033 42">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 31px;
+        font-family: PlayfairDisplay-Regular, Playfair Display;
+      }
+    </style>
+  </defs>
+  <g id="Quote_bubble" data-name="Quote bubble" transform="translate(-140 -850)">
+    <path id="Path_4" data-name="Path 4" class="cls-1" d="M14.517,0A14.517,14.517,0,1,1,0,14.517,14.517,14.517,0,0,1,14.517,0Z" transform="translate(140 850.639)"/>
+    <text id="_" data-name="“" class="cls-2" transform="translate(147.598 884)"><tspan x="0" y="0">“</tspan></text>
+  </g>
+</svg>
