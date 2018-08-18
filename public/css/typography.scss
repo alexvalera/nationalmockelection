@@ -1,5 +1,5 @@
 $title-font: 'Montserrat', sans-serif;
-$regular-font: 'Roboto', sans-serif; 
+$regular-font: 'Roboto', sans-serif;
 $lg-space: 64px;
 $md-space: 48px;
 $base-space: 24px;
@@ -13,20 +13,20 @@ h1, .title-1 {
   font-weight: 800;
   font-style: italic;
   @include width-more-than($tablet-breakpoint) {
-    font-size: 44px; 
-    line-height: 56px; 
+    font-size: 44px;
+    line-height: 56px;
   }
 }
 
 h2, .title-2 {
   margin-bottom: $md-space;
   font-family: $title-font;
-  font-size: 24px; 
-  line-height:28px; 
+  font-size: 24px;
+  line-height:28px;
   font-weight: 900;
   @include width-more-than($tablet-breakpoint) {
-    font-size: 32px; 
-    line-height:36px; 
+    font-size: 32px;
+    line-height:36px;
   }
 }
 
@@ -35,7 +35,7 @@ h3, .title-3 {
   font-family: $regular-font;
   font-size: 17px;
   line-height: 24px;
-  font-weight: 700; 
+  font-weight: 700;
   @include width-more-than($tablet-breakpoint) {
     font-size: 24px;
     line-height: 28px;
@@ -49,7 +49,7 @@ p, .base {
   line-height: 20px;
   @include width-more-than($tablet-breakpoint) {
     font-size: 17px;
-    line-height: 24px; 
+    line-height: 24px;
   }
 }
 
@@ -61,16 +61,16 @@ small, .small {
   font-weight: 300;
   @include width-more-than($tablet-breakpoint) {
     font-size: 14px;
-    line-height: 20px; 
+    line-height: 20px;
   }
 }
 
 a {
   color: #436BC4;
-  border-bottom: solid 1px #436BC4; 
+  border-bottom: solid 1px #436BC4;
   &:hover {
     cursor: pointer;
-  } 
+  }
 }
 
 button {
@@ -79,44 +79,7 @@ button {
   }
 }
 
-blockquote {
-  max-width: 600px;
-  width: 80%;
-  margin: 0 auto; 
-  font-family: $regular-font;
-  padding: $base-space 0; 
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  .quote {
-    font-size: 20px;
-    line-height: 1.2;
-    font-weight: 300;
-    color: #333;
-    @include width-more-than($tablet-breakpoint) {
-      font-size: 24px;
-      line-height: 34px;
-    }
-  }
-  .caption {
-    font-size: 14px;
-    line-height: 20px;
-    color: #707070;
-  }
-  &:before {
-    display: block;
-    margin: 0 auto;
-    content: '';
-    background-image: url(../assets/quote-bubble.svg);
-    width: 45px;
-    height:45px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    @include width-more-than($tablet-breakpoint) {
-      width: 60px;
-      height: 60px;
-    }
-  }
-}
+
 
 .btn-container {
   margin: $md-space 0;
@@ -126,13 +89,13 @@ blockquote {
   padding: 10px 25px;
   @extend .base;
   color: white;
-  border-radius: 5px; 
+  border-radius: 5px;
   border-bottom: 0;
   @include width-more-than($tablet-breakpoint) {
     padding: 15px 30px;
   }
   &:hover {
-    opacity: 0.8; 
+    opacity: 0.8;
   }
 }
 
@@ -158,5 +121,5 @@ blockquote {
 .btn--fullwidth {
   display: block;
   text-align: center;
-  width: 100%; 
+  width: 100%;
 }

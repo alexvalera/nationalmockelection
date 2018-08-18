@@ -1,0 +1,46 @@
+.testimonial {
+  margin: 14em auto 0;
+  width: 80%;
+  max-width: 640px;
+  font-family: $regular-font;
+  padding: 3em 1em 1em;
+  text-align: center;
+  position: relative;
+  &-border {
+    border: 1px solid $grey;
+    border-radius: 5px;
+  }
+  &__quote-bubble {
+    font-size: 3em;
+    line-height: 1.5em;
+    color: white;
+    background: $bright-red;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: -.5em;
+    left: 44.5%;
+    z-index: 100;
+    margin: 0 auto;
+    height: 45px;
+    width: 45px;
+    @include width-more-than($tablet-breakpoint) {
+      font-size: 4em;
+      line-height: 1.5em;
+      width: 60px;
+      height: 60px;
+    }
+  }
+  &__text {
+    font-size: 1.6em;
+    line-height: 1.2em;
+    @include width-more-than($tablet-breakpoint) {
+      font-size: 2em;
+    }
+  }
+  &__person {
+    color: $grey;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
