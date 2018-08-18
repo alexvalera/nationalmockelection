@@ -40,10 +40,36 @@
     bottom: 20px;
     color: white;
     @include width-more-than($tablet-breakpoint) {
-      font-size: 44px;
+      font-size: 32px;
     }
   }
   @include width-more-than($tablet-breakpoint) {
     height: 600px;
   }
+
+  .hero__subheader, .hero__content {
+    animation: fadeIn;
+    animation-duration: 2s;
+  }
+  .hero__animated-text {
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+  }
+  .hero__animated-text.hero__animated-text--border {
+    border-bottom: 5px solid white;
+    padding: 5px;
+  }
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
 }
