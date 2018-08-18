@@ -52,7 +52,30 @@
 }
 
 .poll.poll--3 {
+  .poll__answer-option-group {
+    margin-top: 2em;
+    text-align: center;
+  }
   .poll__answer {
     text-align: center;
+  }
+}
+
+.poll.poll--4 {
+  .poll__answer {
+    text-align: center;
+  }
+  .poll__answer-btn {
+    display: block;
+    margin-right: 15px;
+  }
+  .poll__answer .poll__answer-btn:nth-child(1) {
+    color: white;
+    
+    background: linear-gradient($bright-red, $purple);
+  }
+  .poll__answer .poll__answer-btn:nth-child(2) {
+    color: white;
+    background: linear-gradient($bright-blue, $blue);
   }
 }
