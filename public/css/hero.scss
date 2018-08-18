@@ -1,0 +1,49 @@
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/assets/hero-desktop.png');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  .hero__title {
+    margin-top: 32px;
+    color: white;
+    font-size: 44px;
+    line-height: 1.5;
+    @include width-more-than($tablet-breakpoint) {
+      font-size: 64px;
+      line-height: 1.5;
+    }
+  }
+  .hero__separator {
+    border: 1px solid white;
+    width: 50px;
+    margin: 0 auto;
+    @include width-more-than($tablet-breakpoint) {
+      width: 100px; 
+    }
+  }
+  .hero__subtitle {
+    margin-bottom: 32px;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+  }
+  .hero__subheader {
+    @extend .title-1;
+    margin-bottom: 0; 
+    position: absolute; 
+    text-align: center;
+    font-size: 24px;
+    bottom: 20px;
+    color: white;
+    @include width-more-than($tablet-breakpoint) {
+      font-size: 44px;
+    }
+  }
+  @include width-more-than($tablet-breakpoint) {
+    height: 600px;
+  }
+}
