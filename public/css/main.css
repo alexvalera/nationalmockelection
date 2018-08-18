@@ -108,7 +108,7 @@ input[type=range] {
   /*fix for FF unable to apply focus style bug */
   border: 1px solid white;
   /*required for proper track sizing in FF*/
-  width: 300px; }
+  width: 80%; }
 
 input[type=range]::-webkit-slider-runnable-track {
   width: 300px;
@@ -292,11 +292,30 @@ form.form--center {
 .poll.poll--2 .btn--secondary {
   font-size: 12px; }
 
+.poll.poll--3 .poll__answer-option-group {
+  margin-top: 2em;
+  text-align: center; }
+
 .poll.poll--3 .poll__answer {
   text-align: center; }
 
+.poll.poll--4 .poll__answer {
+  text-align: center; }
+
+.poll.poll--4 .poll__answer-btn {
+  display: block;
+  margin-right: 15px; }
+
+.poll.poll--4 .poll__answer .poll__answer-btn:nth-child(1) {
+  color: white;
+  background: linear-gradient(#FF351C, #B0007C); }
+
+.poll.poll--4 .poll__answer .poll__answer-btn:nth-child(2) {
+  color: white;
+  background: linear-gradient(#41C5FF, #436BC4); }
+
 .testimonial {
-  margin: 14em auto 0;
+  margin: auto 0;
   width: 80%;
   max-width: 640px;
   font-family: "Roboto", sans-serif;
