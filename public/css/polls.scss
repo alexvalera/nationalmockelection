@@ -9,9 +9,6 @@
     font-weight: 800; 
     font-style: italic;
  }
- .poll__answer{
-
- }
  .poll__answer-btn {
    border-radius: 5px;
    border: 0;
@@ -49,5 +46,13 @@
     display: inline;
     margin-left: 5px;
   }
+  .btn--secondary {
+    font-size: 12px;
+  }
+}
 
+.poll.poll--3 {
+  .poll__answer {
+    text-align: center;
+  }
 }

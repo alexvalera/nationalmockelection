@@ -137,6 +137,94 @@ blockquote {
   text-align: center;
   width: 100%; }
 
+input[type=range] {
+  /*removes default webkit styles*/
+  -webkit-appearance: none;
+  /*fix for FF unable to apply focus style bug */
+  border: 1px solid white;
+  /*required for proper track sizing in FF*/
+  width: 300px; }
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 5px;
+  background: linear-gradient(to left, #FF351C, #B0007C);
+  border: none;
+  border-radius: 3px; }
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 32px;
+  width: 32px;
+  background: goldenrod;
+  background: url("https://cdn.shopify.com/s/files/1/1061/1924/products/Smiling_Emoji_with_Smiling_Eyes_large.png?v=1480481060") no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  margin-top: -15px;
+  border-radius: 0 !important;
+  transition: 0.3s ease;
+  box-shadow: -100vw 0 0 100vw dodgerblue; }
+  input[type=range]::-webkit-slider-thumb:focus, input[type=range]::-webkit-slider-thumb:active {
+    transform: scale(1.5); }
+
+input[type=range]:focus {
+  outline: none; }
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: linear-gradient(to left, #FF351C, #B0007C); }
+
+input[type=range]::-moz-range-track {
+  width: 300px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px; }
+
+input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: url("/assets/emoji.png"); }
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring {
+  outline: 1px solid white;
+  outline-offset: -1px; }
+
+input[type=range]::-ms-track {
+  width: 300px;
+  height: 5px;
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  background: transparent;
+  /*leave room for the larger thumb to overflow with a transparent border */
+  border-color: transparent;
+  border-width: 6px 0;
+  /*remove default tick marks*/
+  color: transparent; }
+
+input[type=range]::-ms-fill-lower {
+  background: #777;
+  border-radius: 10px; }
+
+input[type=range]::-ms-fill-upper {
+  background: #ddd;
+  border-radius: 10px; }
+
+input[type=range]::-ms-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: url("../assets/emoji.png"); }
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #888; }
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #ccc; }
+
 .sg .sg-section {
   margin: 64px 0; }
 
@@ -236,3 +324,9 @@ form.form--center {
 .poll.poll--2 .poll__answer label {
   display: inline;
   margin-left: 5px; }
+
+.poll.poll--2 .btn--secondary {
+  font-size: 12px; }
+
+.poll.poll--3 .poll__answer {
+  text-align: center; }
