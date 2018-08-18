@@ -1,0 +1,31 @@
+.hot-stats {
+  overflow: auto;
+  background: linear-gradient($bright-red, $purple);
+  .hot-stats__title {
+    @extend .title-1;
+    font-size: 32px;
+    text-align: center;
+    color: white;
+    @include width-more-than($tablet-breakpoint) {
+      font-size: 40px;
+    }
+  }
+  .hot-stats__title-top {
+    font-weight: 400;
+  }
+  .hot-stats__title-bottom {
+    text-transform: uppercase;
+  }
+  .hot-stats__title-icon {
+    display: block;
+    margin: 0 auto;
+    width: 100px
+  }
+  .hot-stats__polls {
+    @include width-more-than($tablet-breakpoint) {
+      margin-top: 4em;
+      float: right;
+      width: 400px;
+    }
+  }
+}
