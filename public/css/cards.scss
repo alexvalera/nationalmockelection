@@ -1,0 +1,33 @@
+.card {
+  background-color: white;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $grey;
+  border-top: 5px solid $blue;
+  margin: 2rem;
+  position: relative;
+  &__title,
+  &__text {
+    padding: 1rem 1rem .75rem;
+    margin: 0;
+  }
+  &__image {
+    overflow: hidden;
+    background: linear-gradient(to bottom, $bright-blue, $blue);
+    height: 12em;
+    display: inline-block;
+    opacity: .7;
+    img {
+      position: relative;
+      z-index: -2;
+      display: block;
+      max-width: 100%;
+    }
+  }
+  &:hover {
+    transform: translate3d(10px, -10px, 0);
+    box-shadow: -10px 10px $bright-blue;
+  }
+
+}

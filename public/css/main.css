@@ -203,7 +203,7 @@ form.form--center {
   margin-left: 5px; }
 
 .testimonial {
-  margin: 14em auto 0;
+  margin: auto 0;
   width: 80%;
   max-width: 640px;
   font-family: "Roboto", sans-serif;
@@ -243,3 +243,30 @@ form.form--center {
     color: #9a9a9a;
     font-size: 14px;
     line-height: 20px; }
+
+.card {
+  background-color: white;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #9a9a9a;
+  border-top: 5px solid #436BC4;
+  margin: 2rem;
+  position: relative; }
+  .card__title, .card__text {
+    padding: 1rem 1rem .75rem;
+    margin: 0; }
+  .card__image {
+    overflow: hidden;
+    background: linear-gradient(to bottom, #41C5FF, #436BC4);
+    height: 12em;
+    display: inline-block;
+    opacity: .7; }
+    .card__image img {
+      position: relative;
+      z-index: -2;
+      display: block;
+      max-width: 100%; }
+  .card:hover {
+    transform: translate3d(10px, -10px, 0);
+    box-shadow: -10px 10px #41C5FF; }
