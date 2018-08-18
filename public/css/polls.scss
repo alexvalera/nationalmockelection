@@ -14,6 +14,9 @@
    border-radius: 5px;
    border: 0;
  }
+ &:hover {
+   transform: scale(1.1);
+ }
 }
 
 .poll.poll--1 {
@@ -37,11 +40,18 @@
   padding-bottom: 2em;
   .poll__answer {
     display: flex;
-    flex-direction: row; 
+    flex-direction: column;
     justify-content: center;
+    @include width-more-than($tablet-breakpoint) {
+      flex-direction: row; 
+    }
   }
   .poll__answer-option-group {
+    margin-bottom: 1em;
     margin-right: 15px;
+    @include width-more-than($tablet-breakpoint) {
+      margin-bottom: 0; 
+    }
   }
   .poll__answer label {
     display: inline;

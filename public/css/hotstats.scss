@@ -1,6 +1,29 @@
 .hot-stats {
   overflow: auto;
-  background: linear-gradient($bright-red, $purple);
+  background: url('/assets/gradient-texture.png');
+  background-size: cover;
+  background-position: center;
+  .poll {
+    transition: transform 0.5s ease;
+    clear: both;
+    width: 80%;
+    margin: 2em auto;
+    float: unset;
+    @include width-more-than($tablet-breakpoint) {
+      float: right;
+      max-width: 1000px;
+    }
+  }
+  .poll.before-fade-in {
+    transform: translateX(2000px);
+  }
+  .poll:after {
+    content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+  }
   .hot-stats__title {
     @extend .title-1;
     font-size: 32px;
@@ -23,9 +46,101 @@
   }
   .hot-stats__polls {
     @include width-more-than($tablet-breakpoint) {
+      width: 50%;
       margin-top: 4em;
       float: right;
-      width: 400px;
     }
   }
+  .poll--1 {
+    @include width-more-than($tablet-breakpoint) {
+      width: 100%; 
+      max-width: 600px;
+    }
+
+  }
+  .poll--2 {
+    @include width-more-than($tablet-breakpoint) {
+      width: 100%; 
+      max-width: 600px;
+    }
+
+  }
+  .poll--3 {
+    @include width-more-than($tablet-breakpoint) {
+      width: 80%;
+      max-width: 600px;
+    }
+  }
+
+  .hot-stats__facts {
+    margin-top: 2em;
+    text-align: center;
+    @include width-more-than($tablet-breakpoint) {
+      float: left;
+      width: 50%;
+    }
+  }
+
+  .hot-stats__facts-title-icon {
+    margin-right: 15px;
+  }
+
+  .hot-stats__facts-title {
+    display: flex;
+    justify-content: center;
+  }
 }
+
+.fact {
+  transition: transform 0.5s ease;
+  position: relative;
+  width: 250px;
+  padding: 2em;
+  border: 1px solid white;
+  margin: 2em auto 5em auto;
+  @include width-more-than($tablet-breakpoint) {
+    width: 350px;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+
+.fact--shifted {
+  @include width-more-than($tablet-breakpoint) {
+    margin-left: 10%;
+  }
+}
+
+.fact.before-fade-in {
+  transform: translateX(-2000px);
+}
+
+.fact__share {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  text-decoration: none;
+  border-bottom: 0;
+}
+
+.fact__share img {
+  width: 25px;
+}
+
+.fact__text {
+  font-family: $title-font;
+  color: white;
+  font-style: italic;
+}
+
+.fact__text--large {
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+.fact__text--no-bottom {
+  margin-bottom: 0;
+}
+
