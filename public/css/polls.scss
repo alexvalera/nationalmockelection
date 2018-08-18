@@ -1,8 +1,8 @@
 .poll {
  padding: 1em; 
  margin-bottom: 2em;
- border: 1px solid $grey;
  border-radius: 5px;   
+ box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
  .poll__question {
     @extend .title-3;
     color: $black;
@@ -24,7 +24,6 @@
   }
   .poll__answer .poll__answer-btn:nth-child(1) {
     color: white;
-    
     background: linear-gradient($bright-red, $purple);
   }
   .poll__answer .poll__answer-btn:nth-child(2) {
@@ -34,6 +33,7 @@
 }
 
 .poll.poll--2 {
+  padding-bottom: 2em;
   .poll__answer {
     display: flex;
     flex-direction: row; 
@@ -52,6 +52,7 @@
 }
 
 .poll.poll--3 {
+  padding-bottom: 2em;
   .poll__answer-option-group {
     margin-top: 2em;
     text-align: center;
@@ -72,10 +73,10 @@
   .poll__answer .poll__answer-btn:nth-child(1) {
     color: white;
     
-    background: linear-gradient($bright-red, $purple);
+    background: linear-gradient(to right, $bright-red, $purple);
   }
   .poll__answer .poll__answer-btn:nth-child(2) {
     color: white;
-    background: linear-gradient($bright-blue, $blue);
+    background: linear-gradient(to right, $bright-blue, $blue);
   }
 }
