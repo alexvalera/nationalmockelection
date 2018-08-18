@@ -10,16 +10,6 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.static('dist'));
 
 /*ROUTES*/
-app.get('/create-account/', (req,res)=> {
-  console.log('Create Account'); 
-}); 
-app.get('/sign-in/', (req,res)=> {
-  console.log('Sign In'); 
-  res.sendFile('sign-up.html');
-}); 
-app.get('/dashboard/',(req,res)=> {
-  console.log('Dashboard');
-});
 
 app.get('/', (req,res)=> {
   res.render('index', { title: 'Hey', message: 'Hello there!' });
