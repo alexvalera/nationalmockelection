@@ -11,15 +11,122 @@
   <link rel="apple-touch-icon" href="icon.png">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:800i,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-  <link href="./css/bootstrap-grid.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/public/css/main.css">
+  <link href="/css/bootstrap-grid.min.css" type = "text/css" rel="stylesheet">
+  <link rel="stylesheet" type = "text/css" href="/css/main.css">
 </head>
 <body>
+
   <section class = "hot-stats">
-    
+    <section class = "hot-stats__facts">
+      <div class = "hot-stats__facts-title">
+        <div class = "hot-stats__facts-title-icon">
+          <img src = "/assets/fire.png"/>
+        </div>
+        <div class = "hot-stats__facts-title-text">
+          <h2 class = "hot-stats__title">
+            HOT
+            <br>
+            facts
+          </h2>
+        </div>
+      </div>
+        <div class = "hot-stats__facts-container">
+          <div class = "fact fact--shifted before-fade-in" data-on-scroll>
+              <a class = "fact__share">
+                <img src = "/assets/share.png"/>
+              </a>
+              <p class = "fact__text">Two presidents won</p>
+              <p class = "fact__text"><span class = "fact__text--large">49</span> out of <span class = "fact__text--large">50</span></p>
+              <p class = "fact__text fact__text--large">states</p>
+              <p class = "fact__text fact__text--no-bottom">Mr Reagan in 1984</p>
+              <p class = "fact__text">Richard Nixon in 1972</p>
+          </div>
+          <div class = "fact before-fade-in" data-on-scroll>
+              <a class = "fact__share">
+                <img src = "/assets/share.png"/>
+              </a>
+              <p class = "fact__text">Did you know that…</p>
+              <p class = "fact__text fact__text--large">8million</p>
+              <p class = "fact__text fact__text--large">Latinos</p>
+              <p class = "fact__text fact__text--no-bottom">voted for Trump?</p>
+          </div>
+          <div class = "fact fact--shifted before-fade-in"  data-on-scroll>
+              <a class = "fact__share">
+                <img src = "/assets/share.png"/>
+              </a>
+              <p class = "fact__text">In 2016 election,
+around</p>
+              <p class = "fact__text fact__text--large">70m</p>
+              <p class = "fact__text fact__text--no-bottom">registered voters
+abstained from voting</p>
+          </div>
+          <div class = "fact before-fade-in" data-on-scroll>
+              <a class = "fact__share">
+                <img src = "/assets/share.png"/>
+              </a>
+              <p class = "fact__text">at <span class = "fact__text--large">49</span></p>
+              <p class = "fact__text fact__text--large">John F Kennedy</p>
+              <p class = "fact__text fact__text--no-bottom">was the youngest man
+to be elected president</p>
+          </div>
+        </div>
+    </section>
+    <section class = "hot-stats__polls">
+      <img class = "hot-stats__title-icon" src = "/assets/hands-up.png"/>
+      <h2 class = "hot-stats__title">
+        <span class = "hot-stats__title-top">your opinion</span> <br> <span class = "hot-stats__title-bottom">matters</span>
+      </h2>
+      <div class = "hot-stats__poll-container">
+        <form class = "poll poll--1 before-fade-in" data-on-scroll="poll">
+          <label class = "poll__question">Do you think voting should be legally required?</label>
+          <div class = "poll__answer">
+            <button class = "btn poll__answer-btn">Not Really</button>
+            <button class = "btn poll__answer-btn">Absolutely!</button>
+          </div>
+        </form>
+        <form class = "poll poll--3 before-fade-in" data-on-scroll="poll">
+          <label class = "poll__question">Should citizens be obligated to take some form of test before being allowed to vote?</label>
+          <div class = "poll__answer">
+            <input type = "range"/>
+          </div>
+            <div class = "poll__answer-option-group">
+              <a class = "btn btn--secondary">Submit Answer</a>
+            </div>
+        </form>
+        <form class = "poll poll--2 before-fade-in" data-on-scroll="poll">
+          <label class = "poll__question">Should citizens be obligated to take some form of test before being allowed to vote?</label>
+          <div class = "poll__answer">
+            <div class = "poll__answer-option-group">
+              <input name = "choice" type = "radio"/>
+              <label>Yes</label>
+            </div>
+            <div class = "poll__answer-option-group">
+              <input name = "choice" type = "radio"/>
+              <label>No</label>
+            </div>
+            <div class = "poll__answer-option-group">
+              <input name = "choice" type = "radio"/>
+              <label>Maybe</label>
+            </div>
+            <div class = "poll__answer-option-group">
+              <a class = "btn btn--secondary">Answer</a>
+            </div>
+          </div>
+        </form>
+        <form class = "poll poll--4 before-fade-in" data-on-scroll="poll">
+          <label class = "poll__question">We should select presidents
+    based on:</label>
+          <div class = "poll__answer">
+            <button class = "btn poll__answer-btn">The candidate that gets the most votes</button>
+            <button class = "btn poll__answer-btn">Votes awarded by the Electoral College</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
   </section>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="/public/js/main.js"></script>
+  <script src = "/js/noframework.waypoints.min.js"> </script>
+  <script src = "/js/hotstats.js"> </script>
 </body>
 
 </html>

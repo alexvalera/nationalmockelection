@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:800i,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link href="/css/bootstrap-grid.min.css" type = "text/css" rel="stylesheet">
+  <link rel="stylesheet" type = "text/css" href="/css/main.css">
+</head>
+<body>
+    <h2 class = "title-hr"><span>Explore 2016 Mock Election Results</span></h2>
+
+    <section class = "us-map">
+      <div class = "us-map__bar-chart">
+        <div class = "us-map__bar-chart-labels">
+          <label><strong>Democrats</strong> 306</label>
+          <label><strong>Republicans</strong> 232</label>
+        </div>
+        <div class = "us-map__bar-chart-bars">
+          <div class = "us-map__bar-chart-bar">
+          </div>
+          <div class = "us-map__bar-chart-bar">
+          </div>
+        </div>
+      </div>
+      <span class = "us-map__target"></span>
+      <div class = "us-map__modal">
+        <p class = "us-map__modal-state">California</p>
+        <p class = "us-map__stat" id = "votes">55 votes</p>
+        <p class = "us-map__stat" id = "hillary">83% Hillary Clinton</p>
+        <p class = "us-map__stat" id = "donald">55% Donald Trump</p>
+      </div>
+      <div id="map" style="height: 60vh; width: 85vh;"></div>
+      <div id="clicked-state"></div>
+    </section>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src = "/js/raphael.js"></script>
+    <script src = "/js/jquery.usmap.js"></script>
+    <script src = "/js/usmap.js"></script>
+</body>
+
+</html>

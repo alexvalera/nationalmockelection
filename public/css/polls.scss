@@ -1,5 +1,6 @@
 .poll {
- padding: 1em; 
+  background-color: white;
+ padding: 2em; 
  margin-bottom: 2em;
  border-radius: 5px;   
  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
@@ -12,6 +13,9 @@
  .poll__answer-btn {
    border-radius: 5px;
    border: 0;
+ }
+ &:hover {
+   transform: scale(1.1);
  }
 }
 
@@ -36,11 +40,18 @@
   padding-bottom: 2em;
   .poll__answer {
     display: flex;
-    flex-direction: row; 
+    flex-direction: column;
     justify-content: center;
+    @include width-more-than($tablet-breakpoint) {
+      flex-direction: row; 
+    }
   }
   .poll__answer-option-group {
+    margin-bottom: 1em;
     margin-right: 15px;
+    @include width-more-than($tablet-breakpoint) {
+      margin-bottom: 0; 
+    }
   }
   .poll__answer label {
     display: inline;
