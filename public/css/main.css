@@ -677,14 +677,17 @@ form.form--center {
 
 header {
   display: flex;
-  flex-direction: column;
-  font-family: "Montserrat", sans-serif; }
+  flex-direction: column; }
+  header a {
+    font-family: "Montserrat", sans-serif; }
 
 .nav {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
-  @media screen and (min-width: 640px) {
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red; }
+  @media (min-width: 768px) {
     .nav {
       flex-direction: row;
       justify-content: space-between; } }
@@ -698,29 +701,38 @@ header {
     line-height: 2;
     indent: 0;
     display: none; }
-    @media screen and (min-width: 640px) {
+    @media (min-width: 768px) {
       .nav__items {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin: 0; } }
+        margin: 0;
+        padding-right: 2rem; } }
+    .nav__items-logo img {
+      width: 100%;
+      max-height: 6rem; }
   .nav li {
+    padding: 0;
     margin: 0;
     list-style: none; }
-    @media screen and (min-width: 640px) {
+    @media (min-width: 768px) {
+      .nav li {
+        margin-left: 1rem; } }
+    @media (min-width: 1280px) {
       .nav li {
         margin-left: 2rem; } }
     .nav li:before {
       content: '';
       position: initial; }
   .nav a {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 14px;
     color: #436BC4;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    border-bottom: 0; }
     .nav a:hover {
       color: #FF351C;
       border-bottom: 2px solid #FF351C; }
@@ -729,35 +741,36 @@ header {
     align-self: flex-end;
     position: absolute;
     top: 1rem;
-    cursor: pointer; }
-    @media screen and (min-width: 640px) {
+    cursor: pointer;
+    border-bottom: 0; }
+    @media (min-width: 768px) {
       .nav__toggle {
         display: none; } }
     .nav__toggle-Show {
       display: flex; }
 
-.nav-main {
-  padding: 1rem;
-  background-color: white;
-  order: -1; }
-  .nav-main h2 {
-    font-weight: bold;
-    color: white;
-    margin: 0; }
-
-.CTA {
+#CTA {
+  line-height: 1;
   background-color: #FF351C;
   padding: 1rem;
   margin-bottom: 1rem;
   align-self: stretch;
-  text-align: right;
+  text-align: center;
   border: 1px solid #FF351C; }
-  @media screen and (min-width: 640px) {
-    .CTA {
-      padding: 2rem 1rem 0;
+  #CTA a {
+    color: white; }
+  @media (min-width: 768px) {
+    #CTA {
+      padding: 2.1rem 1rem 1.5rem;
       position: relative;
-      top: -1rem; } }
-  .CTA:hover {
+      margin-top: -1.5rem;
+      margin-bottom: 0;
+      bottom: -1rem; } }
+  #CTA span {
+    font-size: 1.5em;
+    font-style: italic;
+    weight: 900; }
+  #CTA:hover {
     background-color: white; }
-    .CTA:hover a {
+    #CTA:hover a {
       color: #41C5FF; }

@@ -1,14 +1,17 @@
 header {
   display: flex;
   flex-direction: column;
-  font-family: "Montserrat", sans-serif;
+  a {
+    font-family: $title-font;
+  }
 }
 .nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // align-items: center;
-  @media screen and (min-width: 640px) {
+  align-items: center;
+  border: 1px solid red;
+  @include width-more-than($tablet-breakpoint) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -22,17 +25,26 @@ header {
     line-height: 2;
     indent: 0;
     display: none;
-    @media screen and (min-width: 640px) {
+    @include width-more-than($tablet-breakpoint) {
       display: flex;
       flex-direction: row;
       align-items: center;
       margin: 0;
+      padding-right: 2rem;
+    }
+    &-logo img {
+      width: 100%;
+      max-height: 6rem;
     }
   }
   li {
+    padding: 0;
     margin: 0;
     list-style: none;
-    @media screen and (min-width: 640px) {
+    @include width-more-than($tablet-breakpoint) {
+      margin-left: 1rem;
+    }
+    @include width-more-than($desktop-breakpoint) {
       margin-left: 2rem;
     }
     &:before {
@@ -41,13 +53,14 @@ header {
     }
   }
   a {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 14px;
     color: $blue;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: all 0.3s;
+    border-bottom: 0;
     &:hover {
       color: $bright-red;
       border-bottom: 2px solid $bright-red;
@@ -59,7 +72,8 @@ header {
     position: absolute;
     top: 1rem;
     cursor: pointer;
-    @media screen and (min-width: 640px) {
+    border-bottom: 0;
+    @include width-more-than($tablet-breakpoint) {
       display: none;
     }
     &-Show {
@@ -67,28 +81,29 @@ header {
     }
   }
 }
-.nav-main {
-  padding: 1rem;
-  background-color: white;
-  order: -1;
-  h2 {
-    font-weight: bold;
-    color: white;
-    margin: 0;
-  }
-}
 
-.CTA {
+#CTA {
+  a {
+    color: white;
+  }
+  line-height: 1;
   background-color: $bright-red;
   padding: 1rem;
   margin-bottom: 1rem;
   align-self: stretch;
-  text-align: right;
+  text-align: center;
   border: 1px solid $bright-red;
-  @media screen and (min-width: 640px) {
-    padding: 2rem 1rem 0;
+  @include width-more-than($tablet-breakpoint) {
+    padding: 2.1rem 1rem 1.5rem;
     position: relative;
-    top: -1rem;
+    margin-top: -1.5rem;
+    margin-bottom: 0;
+    bottom: -1rem;
+  }
+  span {
+    font-size: 1.5em;
+    font-style: italic;
+    weight: 900;
   }
   &:hover {
     background-color: white;
