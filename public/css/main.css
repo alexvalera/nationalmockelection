@@ -399,3 +399,117 @@ form.form--center {
   @media (min-width: 768px) {
     .hero {
       height: 600px; } }
+
+.card {
+  background-color: white;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #9a9a9a;
+  border-top: 5px solid #436BC4;
+  margin: 2rem;
+  position: relative; }
+  .card__title, .card__text {
+    padding: 1rem 1rem .75rem;
+    margin: 0; }
+  .card__image {
+    overflow: hidden;
+    background: linear-gradient(to bottom, #41C5FF, #436BC4);
+    height: 12em;
+    display: inline-block;
+    opacity: .7; }
+    .card__image img {
+      position: relative;
+      z-index: -2;
+      display: block;
+      max-width: 100%; }
+  .card:hover {
+    transform: translate3d(10px, -10px, 0);
+    box-shadow: -10px 10px #41C5FF; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif; }
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  @media screen and (min-width: 640px) {
+    .nav {
+      flex-direction: row;
+      justify-content: space-between; } }
+  .nav__items {
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 1rem;
+    padding: 0;
+    line-height: 2;
+    indent: 0;
+    display: none; }
+    @media screen and (min-width: 640px) {
+      .nav__items {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0; } }
+  .nav li {
+    margin: 0;
+    list-style: none; }
+    @media screen and (min-width: 640px) {
+      .nav li {
+        margin-left: 2rem; } }
+    .nav li:before {
+      content: '';
+      position: initial; }
+  .nav a {
+    font-weight: bold;
+    font-size: 14px;
+    color: #436BC4;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s; }
+    .nav a:hover {
+      color: #FF351C;
+      border-bottom: 2px solid #FF351C; }
+  .nav__toggle {
+    color: #436BC4;
+    align-self: flex-end;
+    position: absolute;
+    top: 1rem;
+    cursor: pointer; }
+    @media screen and (min-width: 640px) {
+      .nav__toggle {
+        display: none; } }
+    .nav__toggle-Show {
+      display: flex; }
+
+.nav-main {
+  padding: 1rem;
+  background-color: white;
+  order: -1; }
+  .nav-main h2 {
+    font-weight: bold;
+    color: white;
+    margin: 0; }
+
+.CTA {
+  background-color: #FF351C;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  align-self: stretch;
+  text-align: right;
+  border: 1px solid #FF351C; }
+  @media screen and (min-width: 640px) {
+    .CTA {
+      padding: 2rem 1rem 0;
+      position: relative;
+      top: -1rem; } }
+  .CTA:hover {
+    background-color: white; }
+    .CTA:hover a {
+      color: #41C5FF; }
