@@ -62,22 +62,45 @@
     }
   }
   .us-map__bar-chart-bars {
+    position: relative;
     .us-map__bar-chart-bar {
+      position: absolute;
       border-radius: 2px;
-    }
-    .us-map__bar-chart-bar:nth-child(1) {
-      float: left;
-      width: 64%;
       height: 20px; 
-      background: linear-gradient(to right, $bright-red, $purple); 
-      margin-right: 2px;
     }
     .us-map__bar-chart-bar:nth-child(2) {
-      float: left;
+      animation: rep-grow;
+      animation-duration: 0.5s;
+      left: 65%;
       width: 35%;
-      height: 20px;
+      background: linear-gradient(to right, $bright-red, $purple); 
+    }
+    .us-map__bar-chart-bar:nth-child(1) {
+      animation: dem-grow;
+      animation-duration: 0.5s;
+      margin-right: 2px;
+      left: 0;
+      width: 64%;
       background: linear-gradient(to right, $bright-blue, $blue); 
     }
+  }
+}
+
+@keyframes dem-grow {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 64%;
+  }
+}
+
+@keyframes rep-grow {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 35%;
   }
 }
 
