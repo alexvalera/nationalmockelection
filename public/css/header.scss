@@ -10,7 +10,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
   @include width-more-than($tablet-breakpoint) {
     flex-direction: row;
     justify-content: space-between;
@@ -59,7 +58,6 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: all 0.3s;
     border-bottom: 0;
     &:hover {
       color: $bright-red;
