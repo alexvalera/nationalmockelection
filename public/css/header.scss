@@ -1,0 +1,99 @@
+header {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+  @media screen and (min-width: 640px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__items {
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 1rem;
+    padding: 0;
+    line-height: 2;
+    indent: 0;
+    display: none;
+    @media screen and (min-width: 640px) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0;
+    }
+  }
+  li {
+    margin: 0;
+    list-style: none;
+    @media screen and (min-width: 640px) {
+      margin-left: 2rem;
+    }
+    &:before {
+      content: '';
+      position: initial;
+    }
+  }
+  a {
+    font-weight: bold;
+    font-size: 14px;
+    color: $blue;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+    &:hover {
+      color: $bright-red;
+      border-bottom: 2px solid $bright-red;
+    }
+  }
+  &__toggle {
+    color: $blue;
+    align-self: flex-end;
+    position: absolute;
+    top: 1rem;
+    cursor: pointer;
+    @media screen and (min-width: 640px) {
+      display: none;
+    }
+    &-Show {
+      display: flex;
+    }
+  }
+}
+.nav-main {
+  padding: 1rem;
+  background-color: white;
+  order: -1;
+  h2 {
+    font-weight: bold;
+    color: white;
+    margin: 0;
+  }
+}
+
+.CTA {
+  background-color: $bright-red;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  align-self: stretch;
+  text-align: right;
+  border: 1px solid $bright-red;
+  @media screen and (min-width: 640px) {
+    padding: 2rem 1rem 0;
+    position: relative;
+    top: -1rem;
+  }
+  &:hover {
+    background-color: white;
+    a {
+      color: $bright-blue;
+    }
+  }
+}
