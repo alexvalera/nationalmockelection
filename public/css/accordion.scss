@@ -1,0 +1,42 @@
+.accordion {
+  padding: 1em;
+  border-top: 5px solid $blue;
+  border-left: 1px solid $grey;
+  border-right: 1px solid $grey;
+  border-bottom: 1px solid $grey;
+  border-radius: 0px 0px 5px 5px;
+  cursor: pointer;
+  .accordion__title {
+    position: relative;
+    font-weight: 700;
+    margin-bottom: 0; 
+  }
+  .accordion__title:after {
+    transition: all 0.3s ease;
+    position: absolute;
+    content: '';
+    background-image: url(/assets/chevron.png);
+    width: 20px;
+    height: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 2px;
+    right: 0;
+  }
+  .accordion__description {
+    margin-bottom: 0;
+    transition: all 0.3s ease-out;
+    max-height: 0px; 
+    height: auto;
+    overflow: hidden;
+  }
+}
+.accordion.accordion--open {
+  .accordion__description {
+    margin-top: 1em;
+    max-height: 500px; 
+  }
+  .accordion__title:after {
+    transform: rotate(180deg);
+  }
+}
