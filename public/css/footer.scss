@@ -5,8 +5,15 @@ footer {
   .container {
     display: flex;
     padding: 1rem;
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    div {
+      padding-bottom: 1rem;
+    }
+    @include width-more-than($tablet-breakpoint) {
+      flex-direction: row;
+    }
   }
   h3 {
     font-family: $title-font;
@@ -38,6 +45,9 @@ footer {
   a {
     font-family: $regular-font;
     font-style: normal;
+  }
+  form {
+    display: flex;
   }
   input {
     font-family: $regular-font;
