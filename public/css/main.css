@@ -796,6 +796,7 @@ header {
     height: 12px;
     background-size: contain;
     background-repeat: no-repeat;
+    top: 2px;
     right: 0; }
   .accordion .accordion__description {
     margin-bottom: 0;
