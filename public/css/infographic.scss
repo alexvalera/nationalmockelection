@@ -1,0 +1,29 @@
+.infographic {
+  img {
+    width: 100%; 
+    max-height: 500px;
+    object-fit: contain;
+  }
+  .infographic__row {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    border-top: 0;
+    @include width-more-than($tablet-breakpoint) {
+      border-top: 1px solid $grey;
+      flex-direction: row;
+    }
+  }
+  .infographic__col {
+    border-right: 0;
+    @include width-more-than($tablet-breakpoint) {
+      border-right: 1px solid $grey;
+    }
+  }
+  .infographic__col:last-child {
+    border-right: 0;
+  }
+  .infographic-row:nth-child(1) {
+    border-top: 0; 
+  }
+}
