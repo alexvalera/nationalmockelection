@@ -739,11 +739,15 @@ header {
     align-self: flex-end;
     position: absolute;
     top: 1rem;
+    right: 1rem;
     cursor: pointer;
-    border-bottom: 0; }
+    border-bottom: 0;
+    width: 40px; }
     @media (min-width: 768px) {
       .nav__toggle {
         display: none; } }
+    .nav__toggle img {
+      max-width: 100%; }
     .nav__toggle-Show {
       display: flex; }
 
@@ -772,3 +776,51 @@ header {
     background-color: white; }
     #CTA:hover a {
       color: #41C5FF; }
+
+footer {
+  border: 1px solid #436BC4;
+  border-top: 34px solid #436BC4;
+  line-height: 1; }
+  footer .container {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: flex-start; }
+  footer h3 {
+    font-family: "Montserrat", sans-serif;
+    color: #233975; }
+  @media (min-width: 768px) {
+    footer div:last-of-type {
+      margin-left: 20%; } }
+  footer ul {
+    list-style: none;
+    line-height: 1em; }
+  footer li {
+    padding: 0;
+    margin: 0; }
+  footer li:before {
+    content: '';
+    position: initial; }
+  footer a {
+    text-decoration: none;
+    border-bottom: none;
+    color: #233975; }
+  footer address,
+  footer a {
+    font-family: "Roboto", sans-serif;
+    font-style: normal; }
+  footer input {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em; }
+  footer input[type="email"] {
+    padding: .5em;
+    border: 1px solid #233975;
+    border-radius: 0 0 5px 5px; }
+  footer input[type="submit"] {
+    background-color: #FF351C;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    padding: .59em;
+    outline: 0;
+    border: 0;
+    margin-left: -8px; }

@@ -69,10 +69,15 @@ header {
     align-self: flex-end;
     position: absolute;
     top: 1rem;
+    right: 1rem;
     cursor: pointer;
     border-bottom: 0;
+    width: 40px;
     @include width-more-than($tablet-breakpoint) {
       display: none;
+    }
+    img {
+      max-width: 100%;
     }
     &-Show {
       display: flex;

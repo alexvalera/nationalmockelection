@@ -1,0 +1,60 @@
+footer {
+  border: 1px solid $blue;
+  border-top: 34px solid $blue;
+  line-height: 1;
+  .container {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  h3 {
+    font-family: $title-font;
+    color: $dark-blue;
+  }
+  @include width-more-than($tablet-breakpoint) {
+    div:last-of-type {
+      margin-left: 20%;
+    }
+  }
+  ul {
+    list-style: none;
+    line-height: 1em;
+  }
+  li {
+    padding: 0;
+    margin: 0;
+  }
+  li:before {
+    content: '';
+    position: initial;
+  }
+  a {
+    text-decoration: none;
+    border-bottom: none;
+    color: $dark-blue;
+  }
+  address,
+  a {
+    font-family: $regular-font;
+    font-style: normal;
+  }
+  input {
+    font-family: $regular-font;
+    font-size: 1em;
+  }
+  input[type="email"] {
+    padding: .5em;
+    border: 1px solid $dark-blue;
+    border-radius: 0 0 5px 5px;
+  }
+  input[type="submit"] {
+    background-color: $bright-red;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    padding: .59em;
+    outline: 0;
+    border: 0;
+    margin-left: -8px;
+  }
+}
