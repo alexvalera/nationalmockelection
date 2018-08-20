@@ -367,6 +367,7 @@ form.form--center {
     line-height: 20px; }
 
 .hero {
+  margin-bottom: 3em;
   position: relative;
   display: flex;
   align-items: center;
@@ -418,6 +419,31 @@ form.form--center {
   .hero .hero__animated-text.hero__animated-text--border {
     border-bottom: 5px solid white;
     padding: 5px; }
+
+.hero.hero--user .hero__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row; }
+
+.hero.hero--user .hero__content-icon {
+  display: flex;
+  justify-content: center;
+  width: 100px; }
+  @media (min-width: 768px) {
+    .hero.hero--user .hero__content-icon {
+      width: auto; } }
+
+.hero.hero--user .hero__title {
+  font-size: 44px;
+  margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .hero.hero--user .hero__title {
+      font-size: 52px; } }
+
+.hero.hero--student {
+  background-image: url("/assets/hero-student.png"); }
 
 @keyframes fadeIn {
   0% {
