@@ -774,3 +774,39 @@ header {
     background-color: white; }
     #CTA:hover a {
       color: #41C5FF; }
+
+.accordion {
+  padding: 1em;
+  border-top: 5px solid #436BC4;
+  border-left: 1px solid #9a9a9a;
+  border-right: 1px solid #9a9a9a;
+  border-bottom: 1px solid #9a9a9a;
+  border-radius: 0px 0px 5px 5px;
+  cursor: pointer; }
+  .accordion .accordion__title {
+    position: relative;
+    font-weight: 700;
+    margin-bottom: 0; }
+  .accordion .accordion__title:after {
+    transition: all 0.3s ease;
+    position: absolute;
+    content: '';
+    background-image: url(/assets/chevron.png);
+    width: 20px;
+    height: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 0; }
+  .accordion .accordion__description {
+    margin-bottom: 0;
+    transition: all 0.3s ease-out;
+    max-height: 0px;
+    height: auto;
+    overflow: hidden; }
+
+.accordion.accordion--open .accordion__description {
+  margin-top: 1em;
+  max-height: 500px; }
+
+.accordion.accordion--open .accordion__title:after {
+  transform: rotate(180deg); }
