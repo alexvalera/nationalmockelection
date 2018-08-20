@@ -776,6 +776,7 @@ header {
       color: #41C5FF; }
 
 .accordion {
+  margin-bottom: 2em;
   padding: 1em;
   border-top: 5px solid #436BC4;
   border-left: 1px solid #9a9a9a;
