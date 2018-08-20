@@ -4,7 +4,7 @@
   padding: 0;
   transition: all 0.3s ease; }
 
-h1, .title-1, .hero .hero__subheader, .hot-stats .hot-stats__title {
+h1, .title-1, .hero .hero__subheader, .hot-stats .hot-stats__title, .get-involved .get-involved__title {
   margin-bottom: 64px;
   font-family: "Montserrat", sans-serif;
   font-size: 32px;
@@ -12,18 +12,18 @@ h1, .title-1, .hero .hero__subheader, .hot-stats .hot-stats__title {
   font-weight: 800;
   font-style: italic; }
   @media (min-width: 768px) {
-    h1, .title-1, .hero .hero__subheader, .hot-stats .hot-stats__title {
+    h1, .title-1, .hero .hero__subheader, .hot-stats .hot-stats__title, .get-involved .get-involved__title {
       font-size: 44px;
       line-height: 56px; } }
 
-h2, .title-2 {
+h2, .title-2, .get-involved .get-involved__cta-title {
   margin-bottom: 48px;
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   line-height: 28px;
   font-weight: 900; }
   @media (min-width: 768px) {
-    h2, .title-2 {
+    h2, .title-2, .get-involved .get-involved__cta-title {
       font-size: 32px;
       line-height: 36px; } }
 
@@ -811,3 +811,30 @@ header {
 
 .accordion.accordion--open .accordion__title:after {
   transform: rotate(180deg); }
+
+.get-involved {
+  padding: 2em;
+  background-image: url("/assets/blue-gradient-texture.png");
+  background-size: cover;
+  background-position: center; }
+  .get-involved .get-involved__title {
+    color: white;
+    text-align: center; }
+  .get-involved .get-involved__cta-section {
+    margin-bottom: 4em;
+    text-align: center; }
+  .get-involved .get-involved__cta-title {
+    color: white; }
+  .get-involved .btn--ghost {
+    padding: 1em 3em; }
+  .get-involved .get-involved__hr {
+    margin-bottom: 4em;
+    height: 9px;
+    border: 0;
+    background-repeat: no-repeat;
+    background-image: url(/assets/squiggly-line.png); }
+
+.btn.btn--ghost {
+  background-color: white;
+  color: #436BC4;
+  text-decoration: none; }
