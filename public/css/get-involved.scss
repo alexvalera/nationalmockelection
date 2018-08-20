@@ -1,0 +1,35 @@
+.get-involved {
+  padding: 2em;
+  background-image: url('/assets/blue-gradient-texture.png'); 
+  background-size: cover;
+  background-position: center;
+  .get-involved__title {
+    @extend .title-1;
+    color: white;
+    text-align: center;
+  }
+  .get-involved__cta-section {
+    margin-bottom: 4em;
+    text-align: center;
+  }
+  .get-involved__cta-title {
+    @extend .title-2;
+    color: white;
+  }
+  .btn--ghost {
+    padding: 1em 3em;
+  }
+  .get-involved__hr {
+    margin-bottom: 4em;
+    height: 9px;
+    border: 0;
+    background-repeat: no-repeat;
+    background-image: url(/assets/squiggly-line.png);
+  }
+}
+
+.btn.btn--ghost {
+  background-color: white;
+  color: $blue;
+  text-decoration: none;
+}
