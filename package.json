@@ -4,6 +4,7 @@
   "description": "Couple of redesigned pages for the National Student Parent Mock Election",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
