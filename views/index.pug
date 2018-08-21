@@ -1,1 +1,33 @@
-h1 helllloooo
+doctype html
+html.no-js(lang='')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='manifest', href='site.webmanifest')
+    link(rel='apple-touch-icon', href='icon.png')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.2.0/css/all.css', integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:600i,800i,900', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Roboto:300,400,700', rel='stylesheet')
+    link(href='/css/bootstrap-grid.min.css', type='text/css', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='/css/main.css')
+  body
+    include components/header
+    include components/homepage-hero
+    include components/social-toolbar
+    include components/card-row
+    include components/button-grid
+    include components/usmap
+    include components/hot-stats
+    include components/testimonial
+    include components/footer
+  script(src='https://code.jquery.com/jquery-3.3.1.min.js', integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', crossorigin='anonymous')
+  script(src='/js/raphael.js')
+  script(src='/js/jquery.usmap.js')
+  script(src='/js/usmap.js')
+  script(src='/js/hero.js')
+  script(src='/js/accordion.js')
+  script(src='/js/hotstats.js')
+

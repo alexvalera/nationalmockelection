@@ -51,10 +51,13 @@ header {
       position: initial;
     }
   }
+  li#CTA {
+    z-index: 1; 
+  }
   a {
     font-weight: 600;
     font-size: 14px;
-    color: $blue;
+    color: $black;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -83,6 +86,9 @@ header {
       display: flex;
     }
   }
+  .donate {
+    color: $blue;
+  }
 }
 
 #CTA {
@@ -106,7 +112,7 @@ header {
   span {
     font-size: 1.5em;
     font-style: italic;
-    weight: 900;
+    font-weight: 900;
   }
   &:hover {
     background-color: white;
@@ -115,3 +121,5 @@ header {
     }
   }
 }
+
+

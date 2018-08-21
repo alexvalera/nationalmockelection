@@ -1,11 +1,13 @@
 const usmap = {
   selectors: {
+    map: '.us-map',
     target: '.us-map__target', 
     modal: '.us-map__modal', 
     state: '.us-map__modal-state', 
     votes: '#votes', 
     hillary: '#hillary', 
-    donald: '#donald'
+    donald: '#donald', 
+    addAnimation: 'us-map--add-animation' 
   },
   stateToColorMap: {
     'ME': {state: 'MAINE',color: 'red'}, 
@@ -61,13 +63,20 @@ const usmap = {
     'HI': {state: 'Hawaii',color: 'blue'}, 
   },
   init: function(){
+
     this.startMap();
     this.addListeners();
   }, 
   addListeners: function() {
+    const module = document.querySelector(this.selectors.map);
+    console.log(module); 
     window.addEventListener('resize', ()=> {
-      console.log('hi');
       this.startMap();
+    });
+    window.addEventListener('scroll', ()=> {
+      if (window.scrollY + window.outerHeight > module.offsetTop + 300) {
+        module.classList.add(this.selectors.addAnimation);
+      }
     });
   },
   startMap: function() {
@@ -81,7 +90,7 @@ const usmap = {
       click: function(event, data) {
         event = event.originalEvent;
         console.log(event);
-        $(_this.selectors.target).css({'left': event.clientX-10, 'top': event.clientY-10});
+        $(_this.selectors.target).css({'left': event.clientX-10, 'top': event.clientY-30});
         $(_this.selectors.modal).css({'left': event.clientX+25, 'top': event.clientY-25});
         if (_this.stateToColorMap[data.name].color ==='red') {
           let trumpVotes = _this.getRandomInt(51, 100);

@@ -111,6 +111,10 @@ button {
   background-color: $black;
 }
 
+.btn--secondary-gradient {
+  background: linear-gradient($blue, $bright-blue);
+}
+
 .btn.btn--primary-large {
   padding: 20px 50px;
   @include width-more-than($tablet-breakpoint) {

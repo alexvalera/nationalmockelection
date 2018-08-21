@@ -1,0 +1,90 @@
+section.hot-stats
+  section.hot-stats__facts
+    .hot-stats__facts-title
+      .hot-stats__facts-title-icon
+        img(src='/assets/fire.png')
+      .hot-stats__facts-title-text
+        h2.hot-stats__title
+          | HOT
+          br
+          |             facts
+    .hot-stats__facts-container
+      .fact.fact--shifted.before-fade-in(data-on-scroll='')
+        a.fact__share
+          img(src='/assets/share.png')
+        p.fact__text Two presidents won
+        p.fact__text
+          span.fact__text--large 49
+          |  out of 
+          span.fact__text--large 50
+        p.fact__text.fact__text--large states
+        p.fact__text.fact__text--no-bottom Mr Reagan in 1984
+        p.fact__text Richard Nixon in 1972
+      .fact.before-fade-in(data-on-scroll='')
+        a.fact__share
+          img(src='/assets/share.png')
+        p.fact__text Did you know that…
+        p.fact__text.fact__text--large 8million
+        p.fact__text.fact__text--large Latinos
+        p.fact__text.fact__text--no-bottom voted for Trump?
+      .fact.fact--shifted.before-fade-in(data-on-scroll='')
+        a.fact__share
+          img(src='/assets/share.png')
+        p.fact__text
+          | In 2016 election,
+          | around
+        p.fact__text.fact__text--large 70m
+        p.fact__text.fact__text--no-bottom
+          | registered voters
+          | abstained from voting
+      .fact.before-fade-in(data-on-scroll='')
+        a.fact__share
+          img(src='/assets/share.png')
+        p.fact__text
+          | at 
+          span.fact__text--large 49
+        p.fact__text.fact__text--large John F Kennedy
+        p.fact__text.fact__text--no-bottom
+          | was the youngest man
+          | to be elected president
+  section.hot-stats__polls
+    img.hot-stats__title-icon(src='/assets/hands-up.png')
+    h2.hot-stats__title
+      span.hot-stats__title-top your opinion
+      br
+      span.hot-stats__title-bottom matters
+    .hot-stats__poll-container
+      form.poll.poll--1.before-fade-in(data-on-scroll='poll')
+        label.poll__question Do you think voting should be legally required?
+        .poll__answer
+          button.btn.poll__answer-btn Not Really
+          button.btn.poll__answer-btn Absolutely!
+      form.poll.poll--3.before-fade-in(data-on-scroll='poll')
+        label.poll__question
+          | Should citizens be obligated to take some form of test before being allowed to vote?
+        .poll__answer
+          input(type='range')
+        .poll__answer-option-group
+          a.btn.btn--secondary.btn--secondary-gradient Answer
+      form.poll.poll--2.before-fade-in(data-on-scroll='poll')
+        label.poll__question
+          | Should citizens be obligated to take some form of test before being allowed to vote?
+        .poll__answer
+          .poll__answer-option-group
+            input(name='choice', type='radio')
+            label Yes
+          .poll__answer-option-group
+            input(name='choice', type='radio')
+            label No
+          .poll__answer-option-group
+            input(name='choice', type='radio')
+            label Maybe
+          .poll__answer-option-group
+            a.btn.btn--secondary.btn--secondary-gradient Answer
+      form.poll.poll--4.before-fade-in(data-on-scroll='poll')
+        label.poll__question
+          | We should select presidents
+          | based on:
+        .poll__answer
+          button.btn.poll__answer-btn The candidate that gets the most votes
+          button.btn.poll__answer-btn Votes awarded by the Electoral College

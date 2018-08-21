@@ -3,7 +3,9 @@
   padding: 0;
   transition: all 0.3s ease;
 }
-
+body {
+  overflow-x: hidden;
+}
 @import 'variables';
 @import 'mixins';
 @import 'typography';
@@ -21,3 +23,5 @@
 @import 'accordion';
 @import 'get-involved';
 @import 'infographic';
+@import 'social-toolbar';
+@import 'button-grid';

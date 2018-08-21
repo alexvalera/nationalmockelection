@@ -26,8 +26,38 @@
     }
   }
   &:hover {
+    cursor: pointer;
     transform: translate3d(10px, -10px, 0);
     box-shadow: -10px 10px $bright-blue;
   }
+}
 
+.card.card--small {
+  padding: 2em 1.5em;
+  border-top: 0; 
+  border: 1px solid $blue;
+  text-align: center;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  max-width: none;
+  @include width-more-than($tablet-breakpoint) {
+    max-width: 350px;
+  }
+  img {
+    width: 120px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+  .card__title {
+    margin-bottom: 0;
+  }
+  .card__text {
+    font-weight: 300; 
+    color: $grey;
+  }
+  &:hover {
+    cursor: pointer;
+    transform: translate3d(10px, -10px, 0);
+    box-shadow: -10px 10px $bright-blue;
+  }
 }
