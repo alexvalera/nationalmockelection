@@ -39,6 +39,9 @@ const hero = {
 
   iterateGroups: function() {
     const changingText = document.querySelector(this.selectors['hero-text']);
+    if (!changingText) {
+      return false;
+    }
     this.iterateGroupsHelper(changingText, this.groups);
   }
 
