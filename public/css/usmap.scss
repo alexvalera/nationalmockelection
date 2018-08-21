@@ -128,6 +128,7 @@
 }
 
 .title-hr {
+  @extend .title-1;
   margin: 2em 0;
   text-align: center;
   position: relative;
@@ -147,6 +148,6 @@
     border-bottom: 1px solid #dedede;
     z-index: -1;
     @include width-more-than($tablet-breakpoint) {
-      top: 20px;
+      top: 30px;
     }
 }

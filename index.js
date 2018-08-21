@@ -15,6 +15,9 @@ app.get('/', (req,res)=> {
   res.render('index', { title: 'Hey', message: 'Hello there!' });
 }); 
 
+app.get('/students', (req,res)=> {
+  res.render('students', { title: 'Hey', message: 'Hello there!' });
+}); 
 // start the server
 app.listen(port);
 console.log('Server started! At http://localhost:' + port); 

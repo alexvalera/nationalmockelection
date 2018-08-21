@@ -7,7 +7,7 @@
 body {
   overflow-x: hidden; }
 
-h1, .title-1, .hero .hero__subheader, .hot-stats .hot-stats__title, .get-involved .get-involved__title {
+h1, .title-1, .hero .hero__subheader, .hot-stats .hot-stats__title, .title-hr, .get-involved .get-involved__title {
   margin-bottom: 64px;
   font-family: "Montserrat", sans-serif;
   font-size: 32px;
@@ -15,7 +15,7 @@ h1, .title-1, .hero .hero__subheader, .hot-stats .hot-stats__title, .get-involve
   font-weight: 800;
   font-style: italic; }
   @media (min-width: 768px) {
-    h1, .title-1, .hero .hero__subheader, .hot-stats .hot-stats__title, .get-involved .get-involved__title {
+    h1, .title-1, .hero .hero__subheader, .hot-stats .hot-stats__title, .title-hr, .get-involved .get-involved__title {
       font-size: 44px;
       line-height: 56px; } }
 
@@ -331,7 +331,7 @@ form.form--center {
   background: linear-gradient(to right, #41C5FF, #436BC4); }
 
 .testimonial {
-  margin: 6em auto;
+  margin: 5em auto;
   width: 80%;
   max-width: 640px;
   font-family: "Roboto", sans-serif;
@@ -430,7 +430,7 @@ form.form--center {
 .hero.hero--user .hero__content {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 20px;
   display: flex;
   flex-direction: row; }
 
@@ -744,7 +744,7 @@ form.form--center {
   z-index: -1; }
   @media (min-width: 768px) {
     .title-hr:before {
-      top: 20px; } }
+      top: 30px; } }
 
 header {
   display: flex;
@@ -947,7 +947,7 @@ footer {
   transform: rotate(180deg); }
 
 .get-involved {
-  padding: 2em;
+  padding: 5em 2em;
   background-image: url("/assets/blue-gradient-texture.png");
   background-size: cover;
   background-position: center; }
@@ -965,6 +965,7 @@ footer {
     margin-bottom: 4em;
     height: 9px;
     border: 0;
+    background-position: center;
     background-repeat: no-repeat;
     background-image: url(/assets/squiggly-line.png); }
 
